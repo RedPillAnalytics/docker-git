@@ -1,2 +1,2 @@
 # docker-cloudbuild
-A template repository for building docker images using Cloud Build and Kaniko.
+An image with a collection of git and GitHub utilities.

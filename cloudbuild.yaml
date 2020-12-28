@@ -8,6 +8,6 @@ steps:
   - --context=./
 timeout: 3600s
 substitutions:
-  _IMAGE_NAME: test-image
+  _IMAGE_NAME: git-utils
 options:
   dynamic_substitutions: true
