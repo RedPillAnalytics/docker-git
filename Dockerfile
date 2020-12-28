@@ -22,5 +22,3 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0 \
 
 # Install lastversion
 RUN pip3 install lastversion
-
-ENTRYPOINT ["bash"]
