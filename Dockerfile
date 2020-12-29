@@ -22,3 +22,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0 \
 
 # Install lastversion
 RUN pip3 install lastversion
+
+# Install jx
+RUN curl -L "https://github.com/jenkins-x/jx/releases/download/$(curl --silent "https://github.com/jenkins-x/jx/releases/latest" | sed 's#.*tag/\(.*\)\".*#\1#')/jx-linux-amd64.tar.gz" | tar xzv "jx" \
+  && mv jx /usr/local/bin
